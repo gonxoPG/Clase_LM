@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaración XML -->
+
+<?xml-stylesheet type="text/css" href="estilo-libros.css"?>
+<!-- Instrucción de procesamiento para la hoja de estilo CSS -->
+
+<catalogo>
+   <!-- Elemento raíz para un catálogo de libros -->
+   
+   <libro>
+      <!-- Elemento que representa un libro individual -->
+      
+      <titulo>El Gran Gatsby</titulo>
+      <!-- El título del libro -->
+      
+      <autor>F. Scott Fitzgerald</autor>
+      <!-- El autor del libro -->
+      
+      <anio>1925</anio>
+      <!-- El año de publicación del libro -->
+   </libro>
+   
+   <libro>
+      <!-- Otro libro en el catálogo -->
+      
+      <titulo>Cien años de soledad</titulo>
+      <autor>Gabriel García Márquez</autor>
+      <anio>1967</anio>
+   </libro>
+   
+   <libro>
+      <!-- Otro libro en el catálogo -->
+      
+      <titulo>Matar a un ruiseñor</titulo>
+      <autor>Harper Lee</autor>
+      <anio>1960</anio>
+   </libro>
+</catalogo>

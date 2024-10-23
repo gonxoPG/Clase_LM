@@ -1,0 +1,147 @@
+/* Permite que las dimensiones de una caja incluyan al padding y al border
+
+Las aplicaciones basadas en WebKit o Blink, como Safari y Chrome, admiten varias extensiones especiales de WebKit para CSS . 
+Estas extensiones generalmente tienen el prefijo -webkit-. La mayoría -webkit-de las propiedades con prefijo también funcionan 
+con un -apple-prefijo. Algunos tienen el prefijo -epub-.
+*/
+
+/*Seleccionamos a todos los elemnentos de la pagina con (*)  */  
+*{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    /*Esto significa que el tamaño total de cada elemento se calculará teniendo en cuenta el contenido, el relleno y el borde, 
+    pero no el margen. Esto se aplica a todos los navegadores, incluidos Safari/Chrome (WebKit), Firefox (Gecko), Opera e Internet 
+    Explorer 8 y posteriores.*/
+    
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Esto significa que el tamaño total de cada elemento se calculará teniendo en cuenta el 
+                                    contenido, el relleno y el borde, pero no el margen.*/
+}
+
+/* Ajustes generales al cuerpo */
+body{
+    /* Ajustamos todos los margins y paddings para empezar de cero */
+    margin: 0;
+    
+    /*padding Ajustamos*/
+    padding: 0;
+
+    /* Ajustes irrelevantes */
+    color: #456789;
+    /*Alieamos a la parte central el texto*/
+    text-align: center;
+    /*Fuente de las letras, es decir el tamaño*/
+    font-size: 18;
+    /*font-weight: bold; esto es para el tipo de letra*/
+    font-weight: bold;
+    /*background: #456789, esto es el color del cuerpo, es decir el color del fondo*/
+    background: #456789;
+}
+
+/******************************************************************
+ *********************** AJUSTES GENERALES ************************
+ ******************************************************************/
+
+/* Ajustamos ancho de la caja general y centramos en la página */
+#wrapper {
+    /*width: 80%; esto es el ajusto en % de la caja general*/
+    width: 80%;
+    /*Margen automatico*/
+    margin: 0 auto;
+}
+
+/*  Tanto el header como el footer ocupan 10%
+    (que repartimos entre altura y padding gracias al box-sizing)
+*/
+#wrapper header, #wrapper footer{
+    /*height: 9.5%, este comando acorta el footer en un 9,5%*/
+    height: 9.5%;
+    /*background: white; esto es el fondo de color del pie  y cabecera en blanco*/
+    background: white;
+    /*padding-top: 0.5%; este comando acorta en 0,5% la distancia de los string*/
+    padding-top: 0.5%;
+}
+
+/* Gestionamos la caja central como flex */
+#central{
+    /*height: 79.5%;este comando estructura la parte central del body*/
+    height: 79.5%;
+    display: flex;
+    flex-flow: row nowrap;/*Es comúnmente utilizada cuando deseas que un elemento se ajuste de manera flexible dentro de un contenedor 
+                    y crezca o se reduzca según sea necesario para llenar o ajustarse al espacio disponible*/
+    margin: 0.5% 0;
+}
+
+/******************************************************************
+********************** AJUSTES DE "CENTRAL" ***********************
+******************************************************************/
+
+#central nav{
+    
+    padding: 10px;
+    height: 100%;
+    /*background: white; esto es el color de fondo*/
+    background: red;
+    flex: 1 1 auto; /*Es comúnmente utilizada cuando deseas que un elemento se ajuste de manera flexible dentro de un contenedor 
+                    y crezca o se reduzca según sea necesario para llenar o ajustarse al espacio disponible*/
+}
+
+/* La sección también la gestionaremos como flex */
+#central section{
+    height: 100%; /*Establece altura del elemento*/
+    margin: 0 0.5%; /*Establece margen derecho e izquierdo*/
+    /*background: white; esto es el color de fondo*/
+    background: greenyellow;
+    padding: 0.5%;
+    order: 2; /*establece en 2, lo que significa que este elemento debe aparecer en segundo lugar en el orden de presentación 
+              dentro del contenedor flexible*/
+    flex: 2 1 auto;
+    display: flex;/*Establece el valor de visualización del elemento en "flex", lo que lo convierte en un contenedor flexible*/
+    flex-flow: column nowrap;
+    /*flex-flow: column nowrap;: Esta propiedad combina dos valores:
+    flex-direction: column; establece la dirección principal del flujo flexible como "columna", lo que significa que los elementos 
+    secundarios se colocarán verticalmente uno debajo del otro.
+    
+    flex-wrap: nowrap; asegura que los elementos secundarios no se envuelvan a la siguiente fila, es decir, todos permanecerán 
+    en una única columna vertical.*/   
+}
+
+#central aside{
+    padding: 10px;
+    height: 100%;
+    order: 3;/*establece en 3, lo que significa que este elemento debe aparecer en tercer lugar en el orden de presentación 
+              dentro del contenedor flexible*/
+    flex: 1 1 auto;
+    /*background: white; esto es el color de fondo*/
+    background: white;
+}
+
+/******************************************************************
+*********************** AJUSTES DE SECTION ************************
+******************************************************************/
+
+#central section>header{
+    /*background: white; esto es el color de fondo*/
+    background: blue;
+    border: 3px solid #456789;
+    height: 14%;
+    padding: 1%;
+    margin: 0.5%;
+}
+
+#central section>article{
+    /*background: white; esto es el color de fondo*/
+    background: blueviolet;
+    border: 3px solid #456789;
+    height: 69%;
+    margin: 0 0.5%;
+    padding: 1%;
+}
+
+#central section>footer{
+    /*background: white; esto es el color de fondo*/
+    background: white;
+    border: 3px solid #456789;
+    height: 14%;
+    padding: 1%;
+    margin: 0.5%;
+}

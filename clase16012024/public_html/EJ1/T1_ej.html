@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Fondo de un div</title>
+        <style>
+
+            html,body {
+                /*height: 100%; esto es el tamaño del body*/
+                height: 100%;
+
+                /*background-color: #456789; esto es el color de fondo*/
+                background-color: #456789;
+            }
+
+            #main {
+                height: 100%;
+                width: 100%;
+                display: table;/*display: table. Permite asignar un comportamiento de tabla a los elementos que haya dentro 
+                               (anidados a la etiqueta donde estás colocando el display: table)*/
+            }
+
+            #demo {
+                width: 630px;
+                height: 630px;
+                margin: 0 auto;/*La propiedad margin establece los márgenes de un elemento especificando entre uno y cuatro 
+                               valores, donde cada valor es una longitud, un porcentaje o aut*/
+
+                /*background:, esto es el fondo y e¡n este caso llamamos a las imagenes por URL*/
+                background: url('IMGs/1424232593_clouds-cloud-128.png') left top repeat-x,
+                    url('IMGs/1424232187_grass.png') left bottom repeat-x,
+                    url('IMGs/1424231838_firefox-512.png') center bottom no-repeat ;
+
+                /*border: 50px solid white; esto me cambia el circulo blanco, a más pixel mayor ancho*/
+                border: 50px solid white;
+
+                /* border-radius: 50% 50%;, eso nos genera que el div se cambie a un circulo*/
+                border-radius: 50% 50%;
+                box-shadow: 0 0 15px 15px #E66000;/*box-shadow permite proyectar una sombra difuminada desde el marco de casi 
+                                                  cualquier elemento*/
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+
+            <div id="demo">
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

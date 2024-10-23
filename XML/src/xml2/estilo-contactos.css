@@ -1,0 +1,37 @@
+/* Estilo para el contenedor de la agenda */
+agenda {
+    display: flex; /* Utiliza un modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos */
+    margin: 10px; /* Agrega un margen exterior de 10 píxeles */
+}
+
+/* Estilo para cada cuadro de contacto */
+contacto {
+    border: 1px solid #333; /* Agrega un borde sólido de 1 píxel de color #333 */
+    padding: 10px; /* Agrega un relleno interior de 10 píxeles */
+    margin: 10px; /* Agrega un margen exterior de 10 píxeles */
+    background-color: #f9f9f9; /* Establece el color de fondo a #f9f9f9 */
+    width: calc(33.33% - 20px); /* Calcula el ancho para ocupar aproximadamente 1/3 de la pantalla
+                                   restando 20 píxeles para el margen y el borde */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del ancho total */
+}
+
+/* Estilo para el nombre en cada cuadro de contacto */
+nombre {
+    color: #456789; /* Establece el color de texto a #456789 */
+    font-size: 18px; /* Establece el tamaño de fuente a 18 píxeles */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+}
+
+/* Estilo para el número de teléfono en cada cuadro de contacto */
+telefono {
+    color: green; /* Establece el color de texto a verde */
+    font-size: 16px; /* Establece el tamaño de fuente a 16 píxeles */
+}
+
+/* Estilo para la dirección de correo electrónico en cada cuadro de contacto */
+email {
+    color: blue; /* Establece el color de texto a azul */
+    font-size: 14px; /* Establece el tamaño de fuente a 14 píxeles */
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mi primera página</title>
+        <link href='' rel='stylesheet' type='text/css'> 
+        <!--href= es un parámetro que indica la referencia o destino del enlace incluido entre las comillas-->
+        <!--rel='stylesheet': define una hoja de estilos preferida o alternativa-->
+        <!--type= indica el lenguaje de hojas de estilo usado.-->
+
+
+        <style>
+            body{
+                font-family: 'Raleway', sans-serif; /* Cambia la familia tipográfica */
+                background-color: #456789; /* Cambia color de fondo */
+            }
+            h1{
+                color: white; /* Cambia color de la fuente */
+                font-size: 50px; /* Cambia el tamaño de la fuente */
+
+                /* Cambios adicionales */
+
+                font-weight: 300; /* Cambia el peso de la fuente */
+                text-align:center; /* Alinea el texto horizontalmente */
+
+                /*Todo lo siguiente alinea el texto verticalmente en la pantalla*/
+                position: absolute;
+                /*El posicionamiento absolute hace que un elemento se coloque respecto a su contenedor posicionado mas cercano, 
+                si no encuentra ningún contenedor cercano, el elemento se colocara respecto al viewport.El viewport es el área 
+                disponible en la pantalla del navegador (sin contar la interfaz del navegador, como botones, barra de menú, etc.)
+                es decir, es el área donde se mostrara la pagina web o el espacio para renderizar el documento web.*/
+                
+                width: 800px;/*width especifica la anchura del area de contenido de un elemento*/
+                height: 200px;/*height establece la altura de un elemento*/
+                top: 50%;/*top permite desplazar un elemento respecto a su posición original tomando como referencia el borde 
+                         superior del elemento*/
+                left: 50%;/* left permite desplazar un elemento respecto a su posición original tomando como referencia el borde 
+                          izquierdo del element*/
+                margin-left: -400px;/*margin-left establece el margen izquierdo de un elemento especificando una longitud o un 
+                                    porcentaje*/
+                margin-top: -100px;/*margin-top establece el margen superior de un elemento especificando una longitud o un 
+                                   porcentaje*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Mi primera página web
+        </h1>
+    </body>
+</html>

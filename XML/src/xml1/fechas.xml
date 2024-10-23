@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esta es la declaración XML que define la versión y la codificación del documento -->
+
+<?xml-stylesheet type="text/css" href="estilo-fechas.css"?>
+<!-- Esta es una instrucción de procesamiento que vincula una hoja de estilo CSS al documento XML para dar formato visual -->
+
+<fechas>
+   <!-- El elemento raíz que contiene la lista de fechas -->
+   
+   <fecha>
+      <!-- Un elemento que representa una fecha individual -->
+      
+      <dia>12</dia>
+      <!-- El día de la fecha "12" -->
+      
+      <mes>enero</mes>
+      <!-- El mes de la fecha "enero" -->
+   </fecha>
+   
+   <fecha>
+      <!-- Otro elemento que representa una fecha individual -->
+      
+      <dia>7</dia>
+      <!-- El día de la fecha "7" -->
+      
+      <mes>abril</mes>
+      <!-- El mes de la fecha "abril" -->
+   </fecha>
+   
+   <fecha>
+      <!-- Otro elemento que representa una fecha individual -->
+      
+      <dia>25</dia>
+      <!-- El día de la fecha "25" -->
+      
+      <mes>octubre</mes>
+      <!-- El mes de la fecha "octubre" -->
+   </fecha>
+</fechas>

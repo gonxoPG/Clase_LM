@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaración XML -->
+
+<?xml-stylesheet type="text/css" href="estilo-contactos.css"?>
+<!-- Instrucción de procesamiento para la hoja de estilo CSS -->
+
+<agenda>
+   <!-- Elemento raíz para una agenda de contactos -->
+   
+   <contacto>
+      <!-- Elemento que representa un contacto individual -->
+      
+      <nombre>Juan Pérez</nombre>
+      <!-- El nombre del contacto -->
+      
+      <telefono>123-456-7890</telefono>
+      <!-- El número de teléfono del contacto -->
+      
+      <email>juan@example.com</email>
+      <!-- La dirección de correo electrónico del contacto -->
+   </contacto>
+   
+   <contacto>
+      <!-- Otro contacto en la agenda -->
+      
+      <nombre>Maria González</nombre>
+      <telefono>987-654-3210</telefono>
+      <email>maria@example.com</email>
+   </contacto>
+   
+   <contacto>
+      <!-- Otro contacto en la agenda -->
+      <nombre>Carlos Rodríguez</nombre>
+      <telefono>555-123-4567</telefono>
+      <email>carlos@example.com</email>
+   </contacto>
+</agenda>

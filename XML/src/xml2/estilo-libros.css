@@ -1,0 +1,32 @@
+/* Estilo para el contenedor catálogo */
+catalogo {
+    display: flex; /* Utiliza un modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos */
+    margin: 10px; /* Agrega un margen exterior de 10 píxeles */
+}
+
+/* Estilo para cada libro en el catálogo */
+libro {
+    border: 2px solid #456789; /* Agrega un borde sólido de 2 píxeles de color #456789 */
+    padding: 10px; /* Agrega un relleno interior de 10 píxeles */
+    margin: 10px; /* Agrega un margen exterior de 10 píxeles */
+    background-color: #f0f0f0; /* Establece el color de fondo a #f0f0f0 */
+}
+
+/* Estilo para el título de cada libro en el catálogo */
+titulo {
+    color: blue; /* Establece el color de texto a azul */
+    font-size: 20px; /* Establece el tamaño de fuente a 20 píxeles */
+}
+
+/* Estilo para el autor de cada libro en el catálogo */
+autor {
+    color: green; /* Establece el color de texto a verde */
+    font-size: 18px; /* Establece el tamaño de fuente a 18 píxeles */
+}
+
+/* Estilo para el año de publicación de cada libro en el catálogo */
+anio {
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+}

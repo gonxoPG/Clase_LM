@@ -1,0 +1,68 @@
+/*Este div da formato a todos los div, por definirlo de así*/
+div {
+ 
+position: absolute;
+border:3px solid #41729c;
+}
+
+div.bloque1 {
+    background-color: #ebf0f9;/* Background-color es un propiedad de CSS que define el color de fondo de un elemento*/
+
+    width:353px;/*width especifica la anchura del area de contenido de un elemento*/
+
+    height:113px;/*height controla la altura de los elementos*/
+
+    top: 200px;/*top permite desplazar un elemento respecto a su posición original tomando como referencia el borde superior del 
+              elemento*/
+
+    left:56px;/*left permite desplazar un elemento respecto a su posición original tomando como referencia el borde izquierdo del 
+              elemento*/
+
+    z-index:30;/*z-index indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+div.bloque2 {
+    background-color: #c5e0b4;
+    width:297px;
+    height:387px;
+    top: 40px;
+    left: 81px;
+    z-index: 40;/*z-index indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+div.bloque3 {
+    background-color: #ffe699;
+    width:397px; /*width especifica la anchura del area de contenido de un elemento*/
+    height:116px;
+    top: 374px;
+    left: 20px;
+    z-index: 20;/*z-index indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+div.bloque2 div.hijo1 {
+    background-color: #5b9ad5;
+    width:266px;
+    height:98px;
+    top: 120px;
+    left: 15px;
+    z-index:90;/*z-index indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+div.bloque2 div.hijo2 {
+    background-color: #d0cece;
+    width:143px;
+    height:296px;
+    top: 33px;
+    left:126px;
+    z-index:30;/*z-index indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+
+div.bloque2 div.hijo3 {
+    background-color: #ffb9b9;
+    width:176px;
+    height:99px;
+    top: 278px;
+    left: 50px;
+    z-index: 10;/*z-index indica el orden de un elemento posicionado y sus descendientes*/
+}

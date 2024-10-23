@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esta es la declaración XML que define la versión y la codificación del documento -->
+
+<?xml-stylesheet type="text/css" href="estilo-articulos.css"?>
+<!-- Esta es una instrucción de procesamiento que vincula una hoja de estilo CSS al documento XML para dar formato visual -->
+
+<articulos>
+   <!-- El elemento raíz que contiene la lista de artículos -->
+   
+   <articulo>
+      <!-- Un elemento que representa un artículo individual -->
+      
+      <nombre>Sofá</nombre>
+      <!-- El nombre del artículo "Sofá" -->
+      
+      <precio>642</precio>
+      <!-- El precio del artículo "Sofá" -->
+      
+   </articulo>
+   
+   <articulo>
+      <!-- Otro elemento que representa un artículo individual -->
+      
+      <nombre>Mesa</nombre>
+      <!-- El nombre del artículo "Mesa" -->
+      
+      <precio>305</precio>
+      <!-- El precio del artículo "Mesa" -->
+   </articulo>
+   
+   <articulo>
+      <!-- Otro elemento que representa un artículo individual -->
+      
+      <nombre>Lámpara</nombre>
+      <!-- El nombre del artículo "Lámpara" -->
+      
+      <precio>89</precio>
+      <!-- El precio del artículo "Lámpara" -->
+      
+   </articulo>
+</articulos>
